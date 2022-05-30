@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.Body {
+  display: flex;
+  flex-direction:row;
+  justify-content:stretch;
+  height: 660px;
+}
 
 .App-logo {
   height: 40vmin;

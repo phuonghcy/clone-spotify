@@ -20,14 +20,16 @@ function App() {
   }
   return (
     <div className="App">
-        <Songs.Provider value={{ DataSongs, song, handleSetSong}}>
+       <Songs.Provider value={{ DataSongs, song, handleSetSong}}>
+      <div className="Body">
         <Navbar />
-        <div className='grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden'>
+        <div className='grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden w-3/4 h-full'>
           {/*span 1 */}
           <DetailSong />
           {/*span 2 */}
           <ListSong />
         </div>
+      </div>
         <Playing />
         </Songs.Provider>
     </div>
